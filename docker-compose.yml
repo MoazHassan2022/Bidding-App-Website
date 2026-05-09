@@ -1,0 +1,20 @@
+services:
+  website-dev:
+    build: .
+    container_name: website_dev
+    profiles: ["dev"]
+    ports:
+      - "8084:80"
+    env_file:
+      - .env
+    restart: always
+    
+  website:
+    build: .
+    container_name: website
+    profiles: ["prod"]
+    ports:
+      - "8083:80"
+    env_file:
+      - .env
+    restart: always
