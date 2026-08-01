@@ -1,0 +1,10 @@
+services:
+  website:
+    build: .
+    container_name: website
+    profiles: ["prod"]
+    ports:
+      - "8083:80"
+    env_file:
+      - .env
+    restart: always
