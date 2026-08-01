@@ -3,7 +3,7 @@ name: 🚀 Deploy Prod Website via SSH
 on:
   push:
     branches:
-      - prod
+      - main
 
 jobs:
   deploy:
@@ -24,8 +24,8 @@ jobs:
         run: |
           ssh root@${{ secrets.PROD_SERVER_IP }} << 'EOF'
             cd ${{ secrets.PROD_SERVER_PATH }}
-            git checkout prod
-            git pull origin prod
+            git checkout main
+            git pull origin main
             docker compose --profile prod stop
             docker compose --profile prod rm -f
             docker compose --profile prod up --build -d
