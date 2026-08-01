@@ -9,6 +9,3 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy built Vite files
 COPY dist /usr/share/nginx/html
-
-# Optional: Copy env file if needed inside the container
-COPY .env /usr/share/nginx/html/.env
