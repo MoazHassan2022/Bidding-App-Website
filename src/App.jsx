@@ -73,7 +73,7 @@ const translations = {
       subtitle: "تصفّح المزادات، زايد مباشرة، وتابع الفائز لحظة بلحظة.",
       cap_home: "الشاشة الرئيسية",
       cap_auctions: "كل المزادات",
-      cap_live: "مزاد مباشر",
+      cap_about_us: "معلومات عنا",
       cap_sold: "نتيجة المزاد",
       cap_packages: "باقات النقاط",
     },
@@ -168,7 +168,7 @@ const translations = {
       subtitle: "Browse auctions, place live bids, and track winners in real time.",
       cap_home: "Home",
       cap_auctions: "All auctions",
-      cap_live: "Live auction",
+      cap_about_us: "About us",
       cap_sold: "Auction result",
       cap_packages: "Points packages",
     },
@@ -180,7 +180,7 @@ const translations = {
       emailLabel: "Email address",
       phoneLabel: "Phone number",
       hoursLabel: "Working hours",
-      hours: "Sat – Thu · 9 AM – 11 PM",
+      hours: "Sun – Thu · 9 AM – 5 PM",
       whatsapp: "Chat on WhatsApp",
     },
     footer: {
@@ -567,7 +567,7 @@ function Screens({ t }) {
         </div>
         <div className="screen-card screen-card-main">
           <PhoneFrame src={SCR.live} />
-          <div className="screen-cap">{t.screens.cap_live}</div>
+          <div className="screen-cap">{t.screens.cap_about_us}</div>
         </div>
         <div className="screen-card screen-card-mid">
           <PhoneFrame src={SCR.sold} />
